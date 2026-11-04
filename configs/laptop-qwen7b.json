@@ -1,0 +1,10 @@
+{
+  "name": "laptop-qwen7b",
+  "base_url": "http://127.0.0.1:8080/v1",
+  "model": "qwen2.5-7b-instruct-q4_k_m",
+  "runtime": "llama.cpp b11669, llama-b11669-bin-win-cuda-12.4-x64.zip sha256 c2da1f73ed176ae093ac5aceb978a7b167a16113f6d74c6789eeaee2135cb8dc",
+  "weights": "Qwen/Qwen2.5-7B-Instruct-GGUF@bb5d59e06d9551d752d08b292a50eb208b07ab1f qwen2.5-7b-instruct-q4_k_m-0000{1,2}-of-00002.gguf, sha256 dfce12e3862a5283ccfb88221b48480e58745165de856439950d0f22590580db and 539cf93f78e887edea1c04e2d7d8cdaca9d01dae9c9025bcb8accbe29df3d72a",
+  "server": "llama-server -m <shard 1> -ngl 99 -c 8192 --host 127.0.0.1 --port 8080",
+  "hardware": "laptop, NVIDIA GeForce RTX 4060 Laptop GPU 8 GB, driver 571.96",
+  "params": {"temperature": 0.7, "max_tokens": 512}
+}

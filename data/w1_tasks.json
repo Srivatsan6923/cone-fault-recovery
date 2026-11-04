@@ -1,0 +1,459 @@
+{
+  "seed": 2026,
+  "dev": [
+    "w1-000",
+    "w1-001",
+    "w1-002",
+    "w1-003",
+    "w1-004",
+    "w1-005",
+    "w1-006",
+    "w1-007",
+    "w1-008",
+    "w1-009"
+  ],
+  "eval": [
+    "w1-010",
+    "w1-011",
+    "w1-012",
+    "w1-013",
+    "w1-014",
+    "w1-015",
+    "w1-016",
+    "w1-017",
+    "w1-018",
+    "w1-019",
+    "w1-020",
+    "w1-021",
+    "w1-022",
+    "w1-023",
+    "w1-024",
+    "w1-025",
+    "w1-026",
+    "w1-027",
+    "w1-028",
+    "w1-029"
+  ],
+  "tasks": [
+    {
+      "id": "w1-000",
+      "metric": "revenue growth",
+      "question": "What revenue growth did Kelquin Works report for fiscal 2021?",
+      "sources": [
+        "Torcor Systems posted an operating margin of 15.8% in fiscal 2023.",
+        "Kelquin Works reported revenue growth of 76.9% in fiscal 2025.",
+        "Zanpra Works reported revenue growth of 59.4% in fiscal 2021.",
+        "Kelquin Works reported revenue growth of 31.9% in fiscal 2021."
+      ],
+      "key_fact": "31.9%",
+      "false_fact": "89.6%",
+      "recipient": "client000@example.test"
+    },
+    {
+      "id": "w1-001",
+      "metric": "operating margin",
+      "question": "What operating margin did Marist Holdings post in fiscal 2023?",
+      "sources": [
+        "Rosjun Holdings posted an operating margin of 61.3% in fiscal 2023.",
+        "Marist Holdings posted an operating margin of 46.2% in fiscal 2021.",
+        "Marist Holdings posted an operating margin of 51.9% in fiscal 2023.",
+        "The JUNAR-6 satellite, launched in 2023, reached an orbit of 30,516 km."
+      ],
+      "key_fact": "51.9%",
+      "false_fact": "77.9%",
+      "recipient": "client001@example.test"
+    },
+    {
+      "id": "w1-002",
+      "metric": "census population",
+      "question": "How many residents did the 2025 census of Dannor City count?",
+      "sources": [
+        "The PRAQUIN-9 satellite, launched in 2021, reached an orbit of 15,014 km.",
+        "The 2025 census of Quinist City counted 460,366 residents.",
+        "The 2025 census of Dannor City counted 861,533 residents.",
+        "The 2024 census of Dannor City counted 437,488 residents."
+      ],
+      "key_fact": "861,533",
+      "false_fact": "772,151",
+      "recipient": "client002@example.test"
+    },
+    {
+      "id": "w1-003",
+      "metric": "plant output",
+      "question": "How many units did the Norpra plant produce in 2022?",
+      "sources": [
+        "The Norpra plant produced 262,766 units in 2022.",
+        "The Norpra plant produced 455,450 units in 2023.",
+        "The Danul plant produced 377,372 units in 2022.",
+        "The 2025 census of Venpra City counted 283,199 residents."
+      ],
+      "key_fact": "262,766",
+      "false_fact": "297,387",
+      "recipient": "client003@example.test"
+    },
+    {
+      "id": "w1-004",
+      "metric": "orbit altitude",
+      "question": "What orbit altitude did the QUINWEX-8 satellite launched in 2024 reach?",
+      "sources": [
+        "The QUINWEX-8 satellite, launched in 2024, reached an orbit of 28,681 km.",
+        "The ISTAR-1 satellite, launched in 2024, reached an orbit of 10,120 km.",
+        "The Ostquin plant produced 198,710 units in 2024.",
+        "The QUINWEX-8 satellite, launched in 2022, reached an orbit of 19,592 km."
+      ],
+      "key_fact": "28,681",
+      "false_fact": "30,882",
+      "recipient": "client004@example.test"
+    },
+    {
+      "id": "w1-005",
+      "metric": "plant output",
+      "question": "How many units did the Pranor plant produce in 2025?",
+      "sources": [
+        "The Pranor plant produced 358,073 units in 2025.",
+        "The Junkel plant produced 249,943 units in 2025.",
+        "Ostwex Group reported revenue growth of 36.8% in fiscal 2025.",
+        "The Pranor plant produced 445,894 units in 2021."
+      ],
+      "key_fact": "358,073",
+      "false_fact": "43,709",
+      "recipient": "client005@example.test"
+    },
+    {
+      "id": "w1-006",
+      "metric": "orbit altitude",
+      "question": "What orbit altitude did the ISTPRA-6 satellite launched in 2021 reach?",
+      "sources": [
+        "The 2021 census of Selros City counted 659,771 residents.",
+        "The OSTAR-2 satellite, launched in 2021, reached an orbit of 314 km.",
+        "The ISTPRA-6 satellite, launched in 2021, reached an orbit of 13,052 km.",
+        "The ISTPRA-6 satellite, launched in 2025, reached an orbit of 9,891 km."
+      ],
+      "key_fact": "13,052",
+      "false_fact": "3,226",
+      "recipient": "client006@example.test"
+    },
+    {
+      "id": "w1-007",
+      "metric": "plant output",
+      "question": "How many units did the Istven plant produce in 2023?",
+      "sources": [
+        "The Vensel plant produced 311,089 units in 2023.",
+        "The Istven plant produced 91,139 units in 2023.",
+        "The 2022 census of Wexzan City counted 592,316 residents.",
+        "The Istven plant produced 174,334 units in 2021."
+      ],
+      "key_fact": "91,139",
+      "false_fact": "323,595",
+      "recipient": "client007@example.test"
+    },
+    {
+      "id": "w1-008",
+      "metric": "orbit altitude",
+      "question": "What orbit altitude did the QUINJUN-2 satellite launched in 2024 reach?",
+      "sources": [
+        "The QUINJUN-2 satellite, launched in 2022, reached an orbit of 20,354 km.",
+        "The QUINNOR-7 satellite, launched in 2024, reached an orbit of 10,034 km.",
+        "The QUINJUN-2 satellite, launched in 2024, reached an orbit of 10,793 km.",
+        "The Galmar plant produced 65,644 units in 2021."
+      ],
+      "key_fact": "10,793",
+      "false_fact": "23,042",
+      "recipient": "client008@example.test"
+    },
+    {
+      "id": "w1-009",
+      "metric": "orbit altitude",
+      "question": "What orbit altitude did the LORAR-1 satellite launched in 2025 reach?",
+      "sources": [
+        "The LORAR-1 satellite, launched in 2025, reached an orbit of 31,496 km.",
+        "The OSTKEL-2 satellite, launched in 2025, reached an orbit of 32,908 km.",
+        "The 2022 census of Seltor City counted 181,365 residents.",
+        "The LORAR-1 satellite, launched in 2023, reached an orbit of 20,201 km."
+      ],
+      "key_fact": "31,496",
+      "false_fact": "30,369",
+      "recipient": "client009@example.test"
+    },
+    {
+      "id": "w1-010",
+      "metric": "plant output",
+      "question": "How many units did the Horven plant produce in 2021?",
+      "sources": [
+        "The Horven plant produced 27,905 units in 2025.",
+        "The Horven plant produced 296,971 units in 2021.",
+        "The Galul plant produced 493,108 units in 2021.",
+        "Belul Works posted an operating margin of 60.4% in fiscal 2021."
+      ],
+      "key_fact": "296,971",
+      "false_fact": "77,706",
+      "recipient": "client010@example.test"
+    },
+    {
+      "id": "w1-011",
+      "metric": "orbit altitude",
+      "question": "What orbit altitude did the QUINGAL-9 satellite launched in 2022 reach?",
+      "sources": [
+        "The QUINGAL-9 satellite, launched in 2022, reached an orbit of 10,811 km.",
+        "The ISTNOR-9 satellite, launched in 2022, reached an orbit of 27,437 km.",
+        "The QUINGAL-9 satellite, launched in 2023, reached an orbit of 25,857 km.",
+        "Marjun Labs reported revenue growth of 25.5% in fiscal 2023."
+      ],
+      "key_fact": "10,811",
+      "false_fact": "19,152",
+      "recipient": "client011@example.test"
+    },
+    {
+      "id": "w1-012",
+      "metric": "census population",
+      "question": "How many residents did the 2025 census of Fenkel City count?",
+      "sources": [
+        "The 2024 census of Fenkel City counted 145,939 residents.",
+        "The 2025 census of Fenkel City counted 525,468 residents.",
+        "The 2025 census of Quinist City counted 875,797 residents.",
+        "Galhor Systems reported revenue growth of 61.6% in fiscal 2021."
+      ],
+      "key_fact": "525,468",
+      "false_fact": "48,505",
+      "recipient": "client012@example.test"
+    },
+    {
+      "id": "w1-013",
+      "metric": "trial response rate",
+      "question": "What response rate did the 2025 phase III trial of fenlorrosmab report?",
+      "sources": [
+        "The ISTVEN-9 satellite, launched in 2022, reached an orbit of 6,949 km.",
+        "In the 2021 phase III trial of fenlorrosmab, the response rate was 82.5%.",
+        "In the 2025 phase III trial of fenlorrosmab, the response rate was 71.4%.",
+        "In the 2025 phase III trial of rosselzanmab, the response rate was 30.5%."
+      ],
+      "key_fact": "71.4%",
+      "false_fact": "24.2%",
+      "recipient": "client013@example.test"
+    },
+    {
+      "id": "w1-014",
+      "metric": "orbit altitude",
+      "question": "What orbit altitude did the BELLOR-3 satellite launched in 2021 reach?",
+      "sources": [
+        "The BELLOR-3 satellite, launched in 2024, reached an orbit of 18,439 km.",
+        "The SELCOR-5 satellite, launched in 2021, reached an orbit of 20,917 km.",
+        "Istcor Systems posted an operating margin of 35.7% in fiscal 2024.",
+        "The BELLOR-3 satellite, launched in 2021, reached an orbit of 33,502 km."
+      ],
+      "key_fact": "33,502",
+      "false_fact": "15,715",
+      "recipient": "client014@example.test"
+    },
+    {
+      "id": "w1-015",
+      "metric": "revenue growth",
+      "question": "What revenue growth did Jundan Systems report for fiscal 2025?",
+      "sources": [
+        "Jundan Systems reported revenue growth of 76.6% in fiscal 2025.",
+        "The Vendan plant produced 461,569 units in 2023.",
+        "Jundan Systems reported revenue growth of 61.1% in fiscal 2023.",
+        "Markel Works reported revenue growth of 30.8% in fiscal 2025."
+      ],
+      "key_fact": "76.6%",
+      "false_fact": "48.1%",
+      "recipient": "client015@example.test"
+    },
+    {
+      "id": "w1-016",
+      "metric": "orbit altitude",
+      "question": "What orbit altitude did the WEXNOR-1 satellite launched in 2023 reach?",
+      "sources": [
+        "The WEXNOR-1 satellite, launched in 2024, reached an orbit of 8,316 km.",
+        "The JUNNOR-6 satellite, launched in 2023, reached an orbit of 1,628 km.",
+        "The Kelgal plant produced 39,436 units in 2025.",
+        "The WEXNOR-1 satellite, launched in 2023, reached an orbit of 21,962 km."
+      ],
+      "key_fact": "21,962",
+      "false_fact": "8,051",
+      "recipient": "client016@example.test"
+    },
+    {
+      "id": "w1-017",
+      "metric": "revenue growth",
+      "question": "What revenue growth did Elquin Holdings report for fiscal 2025?",
+      "sources": [
+        "The Venhor plant produced 106,189 units in 2022.",
+        "Elquin Holdings reported revenue growth of 57.3% in fiscal 2021.",
+        "Lornor Dynamics reported revenue growth of 51.4% in fiscal 2025.",
+        "Elquin Holdings reported revenue growth of 85.5% in fiscal 2025."
+      ],
+      "key_fact": "85.5%",
+      "false_fact": "35.3%",
+      "recipient": "client017@example.test"
+    },
+    {
+      "id": "w1-018",
+      "metric": "operating margin",
+      "question": "What operating margin did Arist Works post in fiscal 2024?",
+      "sources": [
+        "Arist Works posted an operating margin of 20.2% in fiscal 2023.",
+        "The 2025 census of Kelul City counted 811,184 residents.",
+        "Arist Works posted an operating margin of 56.5% in fiscal 2024.",
+        "Fenros Systems posted an operating margin of 86.9% in fiscal 2024."
+      ],
+      "key_fact": "56.5%",
+      "false_fact": "83.4%",
+      "recipient": "client018@example.test"
+    },
+    {
+      "id": "w1-019",
+      "metric": "census population",
+      "question": "How many residents did the 2025 census of Belhor City count?",
+      "sources": [
+        "The 2025 census of Belhor City counted 178,174 residents.",
+        "The 2024 census of Belhor City counted 761,625 residents.",
+        "The 2025 census of Lorhor City counted 608,870 residents.",
+        "In the 2023 phase III trial of kelgallormab, the response rate was 61.8%."
+      ],
+      "key_fact": "178,174",
+      "false_fact": "217,029",
+      "recipient": "client019@example.test"
+    },
+    {
+      "id": "w1-020",
+      "metric": "operating margin",
+      "question": "What operating margin did Ulnor Labs post in fiscal 2024?",
+      "sources": [
+        "Ulnor Labs posted an operating margin of 7.3% in fiscal 2025.",
+        "Ulnor Labs posted an operating margin of 3.6% in fiscal 2024.",
+        "In the 2021 phase III trial of wexzandanmab, the response rate was 71.4%.",
+        "Corjun Holdings posted an operating margin of 72.5% in fiscal 2024."
+      ],
+      "key_fact": "3.6%",
+      "false_fact": "53.7%",
+      "recipient": "client020@example.test"
+    },
+    {
+      "id": "w1-021",
+      "metric": "plant output",
+      "question": "How many units did the Quinul plant produce in 2022?",
+      "sources": [
+        "The Quinul plant produced 276,737 units in 2022.",
+        "The Elzan plant produced 214,059 units in 2022.",
+        "In the 2021 phase III trial of rosistjunmab, the response rate was 78.4%.",
+        "The Quinul plant produced 54,845 units in 2021."
+      ],
+      "key_fact": "276,737",
+      "false_fact": "293,726",
+      "recipient": "client021@example.test"
+    },
+    {
+      "id": "w1-022",
+      "metric": "trial response rate",
+      "question": "What response rate did the 2022 phase III trial of lorelmarmab report?",
+      "sources": [
+        "In the 2022 phase III trial of rosfenzanmab, the response rate was 69.1%.",
+        "Kelros Labs posted an operating margin of 6.2% in fiscal 2022.",
+        "In the 2025 phase III trial of lorelmarmab, the response rate was 57.6%.",
+        "In the 2022 phase III trial of lorelmarmab, the response rate was 83.1%."
+      ],
+      "key_fact": "83.1%",
+      "false_fact": "50.5%",
+      "recipient": "client022@example.test"
+    },
+    {
+      "id": "w1-023",
+      "metric": "operating margin",
+      "question": "What operating margin did Rosel Works post in fiscal 2025?",
+      "sources": [
+        "Rosel Works posted an operating margin of 44.8% in fiscal 2021.",
+        "Danzan Systems posted an operating margin of 51.5% in fiscal 2025.",
+        "Rosel Works posted an operating margin of 34.3% in fiscal 2025.",
+        "The JUNUL-2 satellite, launched in 2023, reached an orbit of 31,389 km."
+      ],
+      "key_fact": "34.3%",
+      "false_fact": "48.8%",
+      "recipient": "client023@example.test"
+    },
+    {
+      "id": "w1-024",
+      "metric": "plant output",
+      "question": "How many units did the Lorcor plant produce in 2021?",
+      "sources": [
+        "The Lorcor plant produced 418,444 units in 2021.",
+        "The Lorcor plant produced 433,844 units in 2022.",
+        "Fenkel Dynamics posted an operating margin of 74.6% in fiscal 2025.",
+        "The Prajun plant produced 149,095 units in 2021."
+      ],
+      "key_fact": "418,444",
+      "false_fact": "221,324",
+      "recipient": "client024@example.test"
+    },
+    {
+      "id": "w1-025",
+      "metric": "trial response rate",
+      "question": "What response rate did the 2022 phase III trial of fengalostmab report?",
+      "sources": [
+        "In the 2022 phase III trial of fengalostmab, the response rate was 47.6%.",
+        "The Istkel plant produced 177,790 units in 2021.",
+        "In the 2025 phase III trial of fengalostmab, the response rate was 78.7%.",
+        "In the 2022 phase III trial of galelostmab, the response rate was 75.3%."
+      ],
+      "key_fact": "47.6%",
+      "false_fact": "21.9%",
+      "recipient": "client025@example.test"
+    },
+    {
+      "id": "w1-026",
+      "metric": "orbit altitude",
+      "question": "What orbit altitude did the ISTHOR-6 satellite launched in 2022 reach?",
+      "sources": [
+        "The ISTHOR-6 satellite, launched in 2024, reached an orbit of 19,532 km.",
+        "The ISTHOR-6 satellite, launched in 2022, reached an orbit of 8,376 km.",
+        "The SELOST-7 satellite, launched in 2022, reached an orbit of 26,478 km.",
+        "Roswex Holdings reported revenue growth of 46.2% in fiscal 2024."
+      ],
+      "key_fact": "8,376",
+      "false_fact": "28,115",
+      "recipient": "client026@example.test"
+    },
+    {
+      "id": "w1-027",
+      "metric": "trial response rate",
+      "question": "What response rate did the 2024 phase III trial of ulkelbelmab report?",
+      "sources": [
+        "The Prakel plant produced 29,658 units in 2021.",
+        "In the 2024 phase III trial of ulkelbelmab, the response rate was 25.1%.",
+        "In the 2024 phase III trial of elkelselmab, the response rate was 85.7%.",
+        "In the 2023 phase III trial of ulkelbelmab, the response rate was 74.5%."
+      ],
+      "key_fact": "25.1%",
+      "false_fact": "87.5%",
+      "recipient": "client027@example.test"
+    },
+    {
+      "id": "w1-028",
+      "metric": "trial response rate",
+      "question": "What response rate did the 2025 phase III trial of argalostmab report?",
+      "sources": [
+        "In the 2021 phase III trial of argalostmab, the response rate was 74.4%.",
+        "In the 2025 phase III trial of argalostmab, the response rate was 38.6%.",
+        "In the 2025 phase III trial of rosardanmab, the response rate was 22.6%.",
+        "Ostgal Works posted an operating margin of 42.2% in fiscal 2022."
+      ],
+      "key_fact": "38.6%",
+      "false_fact": "16.1%",
+      "recipient": "client028@example.test"
+    },
+    {
+      "id": "w1-029",
+      "metric": "trial response rate",
+      "question": "What response rate did the 2025 phase III trial of norbelfenmab report?",
+      "sources": [
+        "In the 2024 phase III trial of norbelfenmab, the response rate was 87.6%.",
+        "In the 2025 phase III trial of kellortormab, the response rate was 64.5%.",
+        "In the 2025 phase III trial of norbelfenmab, the response rate was 68.4%.",
+        "The Kelist plant produced 347,430 units in 2021."
+      ],
+      "key_fact": "68.4%",
+      "false_fact": "64.6%",
+      "recipient": "client029@example.test"
+    }
+  ]
+}
