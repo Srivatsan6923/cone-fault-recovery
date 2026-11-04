@@ -15,7 +15,20 @@ flowchart LR
     W --> E[(Email to client)]
 ```
 
-A fault replaces one agent's output before it is passed on. Every model call, message, and tool call is recorded in an event log, which recovery uses to decide what to rerun. Saving the report can be undone; sending the email cannot. The TAMAS experiments use four tool-using agents that take turns on a shared conversation.
+Saving the report can be undone; sending the email cannot. The TAMAS experiments use four tool-using agents that take turns on a shared conversation.
+
+## Experiment
+
+```mermaid
+flowchart LR
+    T[Task and seed] --> I[Inject a fault<br/>into one agent's output]
+    I --> P[Run the workflow<br/>recording an event log]
+    P --> S[Score how far<br/>the fault spread]
+    P --> R[Recover<br/>restart or rollback]
+    R --> C[Measure cost and<br/>effects left behind]
+```
+
+Every model call, message, and tool call is recorded in the event log, which recovery uses to decide what to rerun. The always-verify baseline instead checks each hand-off while the workflow runs. For TAMAS, each scenario runs clean, attacked, and with a harmless placebo edit, and the three runs are compared.
 
 ## Installation
 
