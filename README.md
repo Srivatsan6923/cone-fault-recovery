@@ -28,20 +28,26 @@ All experiments use Qwen2.5-7B-Instruct (4-bit) served by llama.cpp on a laptop 
 ## Repository layout
 
 ```
-cone/log.py              provenance log (hash-chained events, effect classes)
-cone/llm.py              model client; logs and caches every call
-cone/services.py         simulated tools: files, email, payments
-cone/baselines.py        restart, rollback, always-verify
-cone/workflows/w1.py     three-agent workflow, fault injection, scoring
-cone/workflows/tamas.py  TAMAS scenarios
-cone/run_w1.py           controlled experiments
-cone/run_tamas.py        TAMAS experiments
-cone/judge_tamas.py      LLM judge for Byzantine runs
-cone/report_tables.py    tables and numbers from saved runs
-configs/                 model server configuration
-data/                    tasks and TAMAS scenarios
-traces/                  saved runs (archives) and one example run
-tests/                   unit tests
+cone-fault-recovery/
+├── cone/
+│   ├── log.py              # provenance log: hash-chained events, effect classes
+│   ├── llm.py              # model client; logs and caches every call
+│   ├── services.py         # simulated tools: files, email, payments
+│   ├── baselines.py        # restart, rollback, always-verify
+│   ├── workflows/
+│   │   ├── w1.py           # three-agent workflow, fault injection, scoring
+│   │   ├── w1_tasks.py     # generates the task set
+│   │   └── tamas.py        # TAMAS scenarios
+│   ├── run_w1.py           # controlled experiments
+│   ├── run_tamas.py        # TAMAS experiments
+│   ├── judge_tamas.py      # LLM judge for Byzantine runs
+│   └── report_tables.py    # tables and numbers from saved runs
+├── configs/                # model server configuration
+├── data/
+│   ├── w1_tasks.json       # controlled tasks
+│   └── tamas/              # TAMAS scenarios and licenses
+├── traces/                 # saved runs (archives) and one example run
+└── tests/                  # unit tests
 ```
 
 ## Installation
