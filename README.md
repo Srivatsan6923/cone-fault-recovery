@@ -2,33 +2,26 @@
 
 Phase 1 project for UC San Diego CSE 291A.
 
-CONE studies how a faulty agent output spreads through a multi-agent workflow and how much work recovery has to repeat. A three-agent workflow extracts a fact, writes a report, and emails it to a simulated client. We inject wrong facts, timeouts, stale outputs, and malicious instructions, and compare full restart, rollback, and verification at every hand-off. We also run the prompt injection and Byzantine scenarios from TAMAS.
+CONE studies how a faulty agent output spreads through a multi-agent system and how much work recovery has to repeat. Phase 1 builds the provenance log and a fault-injection harness, and compares three recovery baselines on a controlled three-agent workflow and on the TAMAS benchmark.
 
-## Workflow
-
-```mermaid
-flowchart LR
-    S[Source sentences] --> R[Researcher<br/>extracts the fact]
-    R --> A[Analyst<br/>answers the question]
-    A --> W[Writer<br/>writes the report]
-    W --> F[(Report file)]
-    W --> E[(Email to client)]
-```
-
-Saving the report can be undone; sending the email cannot. The TAMAS experiments use four tool-using agents that take turns on a shared conversation.
-
-## Experiment
+## Overview
 
 ```mermaid
 flowchart LR
-    T[Task and seed] --> I[Inject a fault<br/>into one agent's output]
-    I --> P[Run the workflow<br/>recording an event log]
-    P --> S[Score how far<br/>the fault spread]
-    P --> R[Recover<br/>restart or rollback]
-    R --> C[Measure cost and<br/>effects left behind]
+    F["<b>Fault injection</b><br/>wrong, empty or stale outputs<br/>prompt injection, malicious agents"] --> M
+    M["<b>Multi-agent system</b><br/>LLM agents with tools"] --> Msg[Messages]
+    M --> St[Shared state]
+    M --> Ef[External effects]
+    Msg --> L
+    St --> L
+    Ef --> L
+    L["<b>Provenance log</b><br/>event history, read dependencies<br/>object versions, effect classes"] --> R[Faulty result]
+    R --> B["<b>Baselines</b><br/>full restart, rollback<br/>verify every hand-off"]
 ```
 
-Every model call, message, and tool call is recorded in the event log, which recovery uses to decide what to rerun. The always-verify baseline instead checks each hand-off while the workflow runs. For TAMAS, each scenario runs clean, attacked, and with a harmless placebo edit, and the three runs are compared.
+Every message, shared-state access, and tool call is recorded in the provenance log. Each tool call is marked as reversible, compensable, or irreversible, so a sent email is never counted as undone. Phase 2 adds dependence testing, selective replay, and gating of irreversible effects.
+
+The controlled workload is a three-agent chain: a researcher extracts the fact, an analyst answers the question, and a writer saves a report and emails the client. The TAMAS workload has four tool-using agents that take turns on a shared conversation, and each scenario runs clean, attacked, and with a harmless placebo edit.
 
 ## Installation
 
