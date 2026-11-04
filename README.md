@@ -4,6 +4,19 @@ Phase 1 project for UC San Diego CSE 291A.
 
 CONE studies how a faulty agent output spreads through a multi-agent workflow and how much work recovery has to repeat. A three-agent workflow extracts a fact, writes a report, and emails it to a simulated client. We inject wrong facts, timeouts, stale outputs, and malicious instructions, and compare full restart, rollback, and verification at every hand-off. We also run the prompt injection and Byzantine scenarios from TAMAS.
 
+## Workflow
+
+```mermaid
+flowchart LR
+    S[Source sentences] --> R[Researcher<br/>extracts the fact]
+    R --> A[Analyst<br/>answers the question]
+    A --> W[Writer<br/>writes the report]
+    W --> F[(Report file)]
+    W --> E[(Email to client)]
+```
+
+A fault replaces one agent's output before it is passed on. Every model call, message, and tool call is recorded in an event log, which recovery uses to decide what to rerun. Saving the report can be undone; sending the email cannot. The TAMAS experiments use four tool-using agents that take turns on a shared conversation.
+
 ## Installation
 
 Requires Python 3.12 or later.
@@ -41,6 +54,16 @@ python -m cone.report_tables --out results
 ```
 
 Logging overhead is measured locally, so it varies between machines. An example trace is in `traces/example/`.
+
+## Results
+
+| Experiment | Finding |
+|---|---|
+| Stale output at the reporting stage | Email sent to the wrong client in 60 of 60 runs; rollback fixes the report, but the email stays sent |
+| Rollback vs. restart | 40% fewer tokens for answering-stage faults, 64% for reporting-stage faults |
+| Verify every hand-off | Adds 591–788 tokens per run and misses injections after the first stage |
+| TAMAS prompt injection | Attack succeeds in 94% of runs (placebo 8%) |
+| TAMAS Byzantine agent | Judge flags 63% of attacked runs, but also 42% of clean runs |
 
 ## Scoring
 
